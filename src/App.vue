@@ -7,3 +7,10 @@ import SideBar from './components/SideBar.vue'
     <SideBar />
   </div>
 </template>
+
+<style scoped>
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>
