@@ -1,9 +1,8 @@
 <script>
-import MainBar from './MainBar.vue'
 import ActionList from './ActionList.vue'
 
 export default {
-  components: { MainBar, ActionList },
+  components: { ActionList },
   data() {
     return {
       cardContainerStyle: {
@@ -38,7 +37,7 @@ export default {
 </script>
 
 <template>
-  <div class="">
+  <div class="flex flex-wrap">
     <div
       v-if="!menuIconClicked"
       class="card-container h-screen z-[1] w-full md:w-[220px] min-w-[220px] flex-[160px] top-0 left-0 overflow-x-hidden md:fixed md:rounded-lg md:shadow-sm md:duration-500 md:-translate-x-full md:bg-gray-500"
@@ -225,11 +224,6 @@ export default {
       <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
       <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
       <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
-    </div>
-
-    <!-- Main Bar Section -->
-    <div>
-      <MainBar />
     </div>
   </div>
 </template>

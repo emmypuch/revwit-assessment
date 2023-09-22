@@ -24,13 +24,12 @@ export default {
 </script>
 
 <style scoped>
-/* Badge styling */
 .badge {
   display: inline-block;
   padding: 4px 8px;
-  border-radius: 999px; /* Makes it round */
+  border-radius: 999px;
   font-size: 12px;
   font-weight: bold;
-  margin-right: 5px; /* Add some spacing between badges */
+  margin-right: 5px;
 }
 </style>
