@@ -7,7 +7,7 @@
             to="#"
             class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
           >
-            <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
+            <img src="/src/assets/images/user.png" alt="" class="w-4 h-3 mr-2" />
             All Companies
             <img src="/src/assets/images/arrow-down.png" alt="" class="w-4 h-4 ml-2" />
           </router-link>
@@ -22,7 +22,7 @@
             to="#"
             class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
           >
-            <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
+            <img src="/src/assets/images/filter.png" alt="" class="w-4 h-4 mr-2" />
             Filter
           </router-link>
         </li>
@@ -36,7 +36,7 @@
             to="#"
             class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
           >
-            <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
+            <img src="/src/assets/images/user.png" alt="" class="w-4 h-3 mr-2" />
             Sort
           </router-link>
         </li>
@@ -52,7 +52,7 @@
             to="#"
             class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
           >
-            <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2 mt-1" />
+            <img src="/src/assets/images/chat.png" alt="" class="w-4 h-4 mr-2 mt-1" />
           </router-link>
         </li>
       </ul>
@@ -64,7 +64,7 @@
             to="#"
             class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
           >
-            <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
+            <img src="/src/assets/images/setting.png" alt="" class="w-4 h-4 mr-2" />
             View Setting
           </router-link>
         </li>
@@ -76,8 +76,8 @@
             to="#"
             class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
           >
-            <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
-            Import/Export
+            <img src="/src/assets/images/download.png" alt="" class="w-4 h-4 mr-2" />
+            Import / Export
             <img src="/src/assets/images/arrow-down.png" alt="" class="w-4 h-4 ml-2" />
           </router-link>
         </li>
