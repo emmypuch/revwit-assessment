@@ -6,7 +6,7 @@
           <li>
             <router-link
               to="#"
-              class="no-underline flex items-center text-center text-[11px] text-white px-3"
+              class="no-underline flex items-center text-center text-[11px] text-white px-3 py-[5px]"
             >
               <img src="/src/assets/images/bell.png" alt="" class="w-3 h-3 mr-2" />
               Quick actions
@@ -23,7 +23,7 @@
           <li>
             <router-link to="#" class="no-underline flex items-center text-sm text-white px-3">
               <img src="/src/assets/images/bell.png" alt="" class="w-3 h-3 mr-2" />
-              <p>/</p>
+              <p class="">/</p>
             </router-link>
           </li>
         </ul>

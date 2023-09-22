@@ -1,8 +1,9 @@
 <script>
 import CompanyHeader from './CompanyHeader.vue'
+import BadgeLists from './BadgeLists.vue'
 
 export default {
-  components: { CompanyHeader }
+  components: { CompanyHeader, BadgeLists }
 }
 </script>
 
@@ -20,6 +21,9 @@ export default {
 
         <!-- Company Header Section -->
         <CompanyHeader class="ml-[15rem]" />
+        <div>
+          <BadgeLists />
+        </div>
       </div>
     </div>
   </div>
