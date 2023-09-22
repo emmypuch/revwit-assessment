@@ -96,7 +96,7 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
                     Notifications
                   </router-link>
                 </li>
@@ -105,11 +105,11 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
                     <div class="flex justify-between">
                       <div>Tasks</div>
                       <div
-                        class="flex justify-end ml-36 text-[#c59502] bg-[#574305] p-[4px] rounded-md h-5 w-4 items-center"
+                        class="flex justify-end ml-[120px] text-[#c59502] bg-[#574305] p-[4px] rounded-md h-5 w-4 items-center"
                       >
                         a
                       </div>
@@ -121,7 +121,7 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
                     Notes
                   </router-link>
                 </li>
@@ -130,7 +130,7 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/email.png" alt="" class="w-6 h-6 mr-2" />
+                    <img src="/src/assets/images/email.png" alt="" class="w-4 h-4 mr-2" />
                     Emails
                   </router-link>
                 </li>
@@ -139,7 +139,7 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img src="/src/assets/images/bell.png" alt="" class="w-4 h-4 mr-2" />
                     Reports
                   </router-link>
                 </li>
@@ -154,7 +154,11 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img
+                      src="/src/assets/images/user.png"
+                      alt=""
+                      class="w-4 h-3 mr-2 bg-[#296aea] rounded-md"
+                    />
                     Companies
                   </router-link>
                 </li>
@@ -163,7 +167,11 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img
+                      src="/src/assets/images/user.png"
+                      alt=""
+                      class="w-4 h-3 mr-2 bg-[#276cf0] rounded-md"
+                    />
                     People
                   </router-link>
                 </li>
@@ -172,7 +180,11 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img
+                      src="/src/assets/images/user.png"
+                      alt=""
+                      class="w-4 h-3 mr-2 bg-[#fd9037] rounded-md"
+                    />
                     Deals
                   </router-link>
                 </li>
@@ -180,10 +192,12 @@ export default {
             </div>
 
             <div class="lists">
-              <img src="" alt="" />
               <div class="flex justify-between">
-                <div><h4 class="text-gray-500 text-sm mt-6 ml-3">Lists</h4></div>
-                <div class="text-white mt-6 mr-3">a</div>
+                <div class="flex justify-center items-center">
+                  <img src="/src/assets/images/arrow-down.png" alt="" class="w-5 h-5 mt-6 ml-3" />
+                  <div><h4 class="text-gray-500 text-sm mt-6 ml-3">Lists</h4></div>
+                </div>
+                <div class="text-white mt-6 mr-3 flex justify-center items-center">a</div>
               </div>
               <ul class="sidebar-links">
                 <li>
@@ -191,7 +205,7 @@ export default {
                     to="#"
                     class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
                   >
-                    <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+                    <img src="/src/assets/images/pin.png" alt="" class="w-5 h-5 mr-2" />
                     Sales
                   </router-link>
                 </li>
@@ -203,21 +217,21 @@ export default {
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+              <img src="/src/assets/images/upgrade.png" alt="" class="w-4 h-4 mr-2" />
               Upgrade Attio
             </router-link>
             <router-link
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+              <img src="/src/assets/images/user.png" alt="" class="w-5 h-3 mr-2" />
               Invite teammates
             </router-link>
             <router-link
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="assets/images/bell.png" alt="" class="w-6 h-6 mr-2" />
+              <img src="/src/assets/images/help.png" alt="" class="w-4 h-4 mr-2" />
               Help and first steps
             </router-link>
           </div>
