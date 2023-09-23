@@ -176,8 +176,8 @@ export default {
 </script>
 
 <template>
-  <div class="md:ml-[15rem] mt-4">
-    <div class="overflow-x-auto overflow-y-auto max-h-[540px]">
+  <div class="md:ml-[15rem] mt-8">
+    <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
       <table class="table-auto w-full">
         <thead>
           <tr class="text-white font-semibold text-sm border-b border-t border-gray-500">
@@ -195,7 +195,7 @@ export default {
               />
             </th>
             <th class="border-r border-gray-500">
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-[20px]">
                 <div class="flex">
                   <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
                   <div class="text-[12px]">Categories</div>
