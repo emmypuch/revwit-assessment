@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-wrap">
+  <div class="">
     <div
       v-if="!menuIconClicked"
       class="card-container h-screen z-[1] w-full md:w-[220px] min-w-[220px] flex-[160px] top-0 left-0 overflow-x-hidden md:fixed md:rounded-lg md:shadow-sm md:duration-500 md:-translate-x-full md:bg-gray-500"

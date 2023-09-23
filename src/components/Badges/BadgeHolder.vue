@@ -1,24 +1,17 @@
 <template>
-  <table>
-    <tbody>
-      <tr>
-        <td v-for="(badge, index) in badgeData" :key="index">
-          <span
-            :style="{ backgroundColor: badge.backgroundColor, color: badge.textColor }"
-            class="badge"
-          >
-            {{ badge.text }}
-          </span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    <div v-for="(badgeHolder, index) in mockData" :key="index" class="badge">
+      <span :style="{ backgroundColor: badgeHolder.backgroundColor, color: badgeHolder.textColor }">
+        {{ badgeHolder.text }}
+      </span>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    badgeData: Array
+    mockData: Array
   }
 }
 </script>

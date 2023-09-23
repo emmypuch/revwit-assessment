@@ -149,48 +149,54 @@ export default {
 
 <template>
   <div class="md:ml-[15rem] mt-4">
-    <div class="overflow-x-auto overflow-y-auto max-h-[470px]">
-      <table class="table-auto min-w-full">
-        <thead>
-          <tr>
-            <th class="border px-4 py-2 text-white text-sm">
-              <div
-                class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
-              ></div>
-              Company
-              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-            </th>
-            <th class="border px-4 py-2 text-white text-sm">
-              <div class="flex items-center">
-                <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
-                Categories
-              </div>
-              <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
-            </th>
-            <th class="border px-4 py-2 text-white text-sm flex items-center">
-              LinkedIn
-              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-            </th>
-            <th class="border px-4 py-2 text-white text-sm">
-              Last Interact...
-              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-              <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
-            </th>
-            <th class="border px-4 py-2 text-white text-sm">
-              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-              Connection Strength
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(item, index) in mockData" :key="index">
-            <td class="border px-4 py-2 text-white text-sm whitespace-pre-line">{{ item.name }}</td>
-            <td class="border px-4 py-2 whitespace-pre-line">
-              <BadgeHolder :badgeData="item.badges" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
+      <div class="flex text-white font-semibold text-sm border-b border-t border-gray-500">
+        <div class="p-4 border-r border-gray-500 flex">
+          <div
+            class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
+          ></div>
+          Company
+          <img
+            src="/src/assets/images/plus.png"
+            alt="Category Image"
+            class="w-4 h-4 ml-[4rem] mt-1"
+          />
+        </div>
+        <div class="p-4 border-r border-gray-500 flex justify-between">
+          <div class="flex items-center">
+            <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
+            Categories
+          </div>
+          <div class="ml-[5rem]">
+            <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+          </div>
+        </div>
+        <div class="p-4 border-r border-gray-500 flex">
+          LinkedIn
+          <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+        </div>
+        <div class="p-4 border-r border-gray-500 flex">
+          Last Interact...
+          <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+          <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+        </div>
+        <div class="p-4 flex">
+          <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+          Connection Strength
+        </div>
+      </div>
+
+      <div
+        v-for="(item, index) in mockData"
+        :key="index"
+        class="flex text-white text-sm border-t border-b border-gray-500"
+      >
+        <div class="p-4 border-r border-gray-500 w-1/5 whitespace-pre-line">{{ item.name }}</div>
+        <div class="p-4 border-r border-gray-500 w-3/5 whitespace-pre-line bg-gray-800">
+          <BadgeHolder :mockData="item.badges" />
+        </div>
+        <div class="p-4 w-1/5 border-r border-gray-500"></div>
+      </div>
     </div>
   </div>
 </template>

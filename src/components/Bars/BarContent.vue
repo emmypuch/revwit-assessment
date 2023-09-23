@@ -8,10 +8,19 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-wrap">
+  <div class="container">
     <div>
       <SideBar />
     </div>
     <MainBar />
   </div>
 </template>
+
+<style scoped>
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+</style>
