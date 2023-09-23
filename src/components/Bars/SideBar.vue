@@ -1,6 +1,6 @@
 <script>
-import ActionList from './ActionList.vue'
-import ToggleButton from './Button/ToggleButton.vue'
+import ActionList from '../ActionList.vue'
+import ToggleButton from '../Button/ToggleButton.vue'
 
 export default {
   components: { ActionList, ToggleButton },

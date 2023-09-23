@@ -20,7 +20,7 @@
         <ul
           class="list-none bg-transparent border-solid border-[1px] border-gray-500 rounded-lg ml-2"
         >
-          <li>
+          <li class="mt-1">
             <router-link to="#" class="no-underline flex items-center text-sm text-white px-3">
               <img src="/src/assets/images/bell.png" alt="" class="w-3 h-3 mr-2" />
               <p class="">/</p>

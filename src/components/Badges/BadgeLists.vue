@@ -1,49 +1,3 @@
-<template>
-  <div class="ml-[15rem] mt-4">
-    <table class="table-auto">
-      <thead>
-        <tr>
-          <th class="border px-4 py-2 text-white text-sm">
-            <div
-              class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
-            ></div>
-            Company
-            <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-          </th>
-          <th class="border px-4 py-2 text-white text-sm">
-            <div class="flex items-center">
-              <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
-              Categories
-            </div>
-            <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
-          </th>
-          <th class="border px-4 py-2 text-white text-sm flex items-center">
-            LinkedIn
-            <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-          </th>
-          <th class="border px-4 py-2 text-white text-sm">
-            Last Interact...
-            <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-            <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
-          </th>
-          <th class="border px-4 py-2 text-white text-sm">
-            <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-            Connection Strength
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(item, index) in mockData" :key="index">
-          <td class="border px-4 py-2 text-white text-sm">{{ item.name }}</td>
-          <td class="border px-4 py-2">
-            <BadgeHolder :badgeData="item.badges" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</template>
-
 <script>
 import BadgeHolder from './BadgeHolder.vue'
 
@@ -192,3 +146,51 @@ export default {
   }
 }
 </script>
+
+<template>
+  <div class="md:ml-[15rem] mt-4">
+    <div class="overflow-x-auto overflow-y-auto max-h-[470px]">
+      <table class="table-auto min-w-full">
+        <thead>
+          <tr>
+            <th class="border px-4 py-2 text-white text-sm">
+              <div
+                class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
+              ></div>
+              Company
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+            </th>
+            <th class="border px-4 py-2 text-white text-sm">
+              <div class="flex items-center">
+                <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
+                Categories
+              </div>
+              <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+            </th>
+            <th class="border px-4 py-2 text-white text-sm flex items-center">
+              LinkedIn
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+            </th>
+            <th class="border px-4 py-2 text-white text-sm">
+              Last Interact...
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+              <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+            </th>
+            <th class="border px-4 py-2 text-white text-sm">
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+              Connection Strength
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(item, index) in mockData" :key="index">
+            <td class="border px-4 py-2 text-white text-sm whitespace-pre-line">{{ item.name }}</td>
+            <td class="border px-4 py-2 whitespace-pre-line">
+              <BadgeHolder :badgeData="item.badges" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

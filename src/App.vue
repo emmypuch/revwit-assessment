@@ -1,16 +1,9 @@
 <script setup>
-import SideBar from './components/SideBar.vue'
+import BarContent from './components/Bars/BarContent.vue'
 </script>
 
 <template>
   <div>
-    <SideBar />
+    <BarContent />
   </div>
 </template>
-
-<style scoped>
-body {
-  display: flex;
-  flex-wrap: wrap;
-}
-</style>

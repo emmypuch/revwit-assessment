@@ -9,7 +9,9 @@ export default {
 
 <template>
   <div class="flex flex-wrap">
-    <SideBar />
+    <div>
+      <SideBar />
+    </div>
     <MainBar />
   </div>
 </template>
