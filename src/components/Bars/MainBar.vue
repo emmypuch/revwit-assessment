@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div class="fixed">
+  <div class="">
     <div class="main-bar bg-[#1b1d21] h-screen w-screen">
       <div class="company-card_container">
         <div class="card-heading md:ml-[16rem]">
