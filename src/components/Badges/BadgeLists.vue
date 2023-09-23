@@ -178,121 +178,111 @@ export default {
 <template>
   <div class="md:ml-[15rem] mt-6">
     <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
-      <div class="md:w-full">
-        <table class="table-auto w-full">
-          <thead>
-            <tr class="text-white font-semibold text-sm border-b border-t border-gray-500">
-              <th class="p-[3px] border-r border-gray-500 flex justify-between">
+      <table class="table-auto w-full">
+        <thead>
+          <tr class="text-white font-semibold text-sm border-b border-t border-gray-500">
+            <th class="p-[3px] border-r border-gray-500 flex justify-between">
+              <div class="flex">
+                <div
+                  class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
+                ></div>
+                <div class="text-[12px]">Company</div>
+              </div>
+              <img
+                src="/src/assets/images/plus.png"
+                alt="Category Image"
+                class="w-4 h-4 ml-[4rem] mt-[1.5px]"
+              />
+            </th>
+            <th class="border-r border-gray-500">
+              <div class="flex justify-between mb-[20px]">
                 <div class="flex">
-                  <div
-                    class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
-                  ></div>
-                  <div class="text-[12px]">Company</div>
+                  <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
+                  <div class="text-[12px]">Categories</div>
                 </div>
-                <img
-                  src="/src/assets/images/plus.png"
-                  alt="Category Image"
-                  class="w-4 h-4 ml-[4rem] mt-[1.5px]"
-                />
-              </th>
-              <th class="border-r border-gray-500">
-                <div class="flex justify-between mb-[20px]">
-                  <div class="flex">
-                    <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
-                    <div class="text-[12px]">Categories</div>
-                  </div>
-                  <div class="ml-[5rem]">
-                    <img
-                      src="/src/assets/images/stars.png"
-                      alt="Second Image"
-                      class="w-4 h-4 ml-2"
-                    />
-                  </div>
-                </div>
-              </th>
-              <th class="p-[3px] border-r border-gray-500 flex justify-between">
-                <div class="flex">
-                  <img
-                    src="/src/assets/images/in.png"
-                    alt="Category Image"
-                    class="w-4 h-4 mt-[1.9px] mr-1"
-                  />
-                  <div class="text-[12px] ml-1">LinkedIn</div>
-                </div>
-                <div>
+                <div class="ml-[5rem]">
                   <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
                 </div>
-              </th>
-              <th class="p-[2px] border-r border-gray-500">
-                <div class="flex mb-[20px]">
-                  <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
-                  <div class="text-[12px]">Last Interact...</div>
-                  <img
-                    src="/src/assets/images/plus.png"
-                    alt="Category Image"
-                    class="w-4 h-4 ml-3"
-                  />
-                  <img
-                    src="/src/assets/images/stars.png"
-                    alt="Second Image"
-                    class="w-4 h-4 ml-3 mt-[2px]"
-                  />
-                </div>
-              </th>
-              <th class="p-[3px] flex">
+              </div>
+            </th>
+            <th class="p-[3px] border-r border-gray-500 flex justify-between">
+              <div class="flex">
+                <img
+                  src="/src/assets/images/in.png"
+                  alt="Category Image"
+                  class="w-4 h-4 mt-[1.9px] mr-1"
+                />
+                <div class="text-[12px] ml-1">LinkedIn</div>
+              </div>
+              <div>
+                <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+              </div>
+            </th>
+            <th class="p-[2px] border-r border-gray-500">
+              <div class="flex mb-[20px]">
                 <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
-                <div class="text-[12px]">Connection Strength</div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="(item, index) in mockData"
-              :key="index"
-              class="text-white text-sm border-t border-b border-gray-500"
+                <div class="text-[12px]">Last Interact...</div>
+                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-3" />
+                <img
+                  src="/src/assets/images/stars.png"
+                  alt="Second Image"
+                  class="w-4 h-4 ml-3 mt-[2px]"
+                />
+              </div>
+            </th>
+            <th class="p-[3px] flex">
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
+              <div class="text-[12px]">Connection Strength</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(item, index) in mockData"
+            :key="index"
+            class="text-white text-sm border-t border-b border-gray-500"
+          >
+            <td class="p-[3px] border-r text-sm flex border-gray-500 whitespace-pre-line">
+              <div
+                class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
+              ></div>
+              <div>
+                <img
+                  :src="logoMapping[item.name]"
+                  alt="Company Logo"
+                  class="w-3 h-3 rounded-md mt-[5px] mr-1"
+                />
+              </div>
+              <div class="flex text-[12px]">{{ item.name }}</div>
+            </td>
+            <td
+              class="p-[3px] border-r text-[12px] border-gray-500 w-2/5 whitespace-pre-line bg-[#21212e]"
             >
-              <td class="p-[3px] border-r text-sm flex border-gray-500 whitespace-pre-line">
-                <div
-                  class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
-                ></div>
-                <div>
-                  <img
-                    :src="logoMapping[item.name]"
-                    alt="Company Logo"
-                    class="w-3 h-3 rounded-md mt-[5px] mr-1"
-                  />
-                </div>
-                <div class="flex text-[12px]">{{ item.name }}</div>
-              </td>
-              <td
-                class="p-[3px] border-r text-[12px] border-gray-500 w-2/5 whitespace-pre-line bg-[#21212e]"
-              >
-                <BadgeHolder :mockData="item.badges" />
-              </td>
+              <BadgeHolder :mockData="item.badges" />
+            </td>
 
-              <td
-                class="p-[3px] w-32 border-r border-gray-500 text-[13px] bg-[#21212e] text-gray-500"
-              >
-                <li class="underline list-none">
-                  {{ linkedIn[index] }}
-                </li>
-              </td>
+            <td
+              class="p-[3px] w-32 border-r border-gray-500 text-[13px] bg-[#21212e] text-gray-500"
+            >
+              <li class="underline list-none">
+                {{ linkedIn[index] }}
+              </li>
+            </td>
 
-              <td
-                class="p-[3px] w-44 border-r border-gray-500 text-[13px] text-gray-500 bg-[#21212e]"
-              >
-                <li class="list-none">No interaction</li>
-              </td>
-              <td class="p-[3px] w-44 border-r border-gray-500 text-[13px] bg-[#21212e]">
-                <div class="flex">
-                  <div class="bg-gray-500 p-[5px] h-[1px] w-[2px] mt-[5px] rounded-full"></div>
-                  <div class="ml-2">No communication</div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            <td
+              class="p-[3px] w-44 border-r border-gray-500 text-[13px] text-gray-500 bg-[#21212e]"
+            >
+              <li class="list-none">No interaction</li>
+            </td>
+            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px] bg-[#21212e]">
+              <div class="flex">
+                <div class="bg-gray-500 p-[5px] h-[1px] w-[2px] mt-[5px] rounded-full"></div>
+                <div class="ml-2">No communication</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
