@@ -22,7 +22,7 @@
         >
           <li class="mt-1">
             <router-link to="#" class="no-underline flex items-center text-sm text-white px-3">
-              <img src="/src/assets/images/bell.png" alt="" class="w-3 h-3 mr-2" />
+              <img src="/src/assets/images/search.png" alt="" class="w-3 h-3 mr-2" />
               <p class="">/</p>
             </router-link>
           </li>

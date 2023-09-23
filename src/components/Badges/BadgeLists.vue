@@ -176,7 +176,7 @@ export default {
 </script>
 
 <template>
-  <div class="md:ml-[15rem] mt-8">
+  <div class="md:ml-[15rem] mt-6">
     <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
       <table class="table-auto w-full">
         <thead>
@@ -210,24 +210,28 @@ export default {
                 <img
                   src="/src/assets/images/in.png"
                   alt="Category Image"
-                  class="w-4 h-4 ml-2 mt-[1.9px] mr-1"
+                  class="w-4 h-4 mt-[1.9px] mr-1"
                 />
-                <div class="text-[12px]">LinkedIn</div>
+                <div class="text-[12px] ml-1">LinkedIn</div>
               </div>
               <div>
                 <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
               </div>
             </th>
             <th class="p-[2px] border-r border-gray-500">
-              <div class="flex">
-                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+              <div class="flex mb-[20px]">
+                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
                 <div class="text-[12px]">Last Interact...</div>
-                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-                <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-3" />
+                <img
+                  src="/src/assets/images/stars.png"
+                  alt="Second Image"
+                  class="w-4 h-4 ml-3 mt-[2px]"
+                />
               </div>
             </th>
             <th class="p-[3px] flex">
-              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
               <div class="text-[12px]">Connection Strength</div>
             </th>
           </tr>
@@ -260,16 +264,21 @@ export default {
             <td
               class="p-[3px] w-32 border-r border-gray-500 text-[13px] bg-[#21212e] text-gray-500"
             >
-              {{ linkedIn[index] }}
+              <li class="underline list-none">
+                {{ linkedIn[index] }}
+              </li>
             </td>
 
             <td
               class="p-[3px] w-44 border-r border-gray-500 text-[13px] text-gray-500 bg-[#21212e]"
             >
-              No interaction
+              <li class="list-none">No interaction</li>
             </td>
             <td class="p-[3px] w-44 border-r border-gray-500 text-[13px] bg-[#21212e]">
-              No communication
+              <div class="flex">
+                <div class="bg-gray-500 p-[5px] h-[1px] w-[2px] mt-[5px] rounded-full"></div>
+                <div class="ml-2">No communication</div>
+              </div>
             </td>
           </tr>
         </tbody>
