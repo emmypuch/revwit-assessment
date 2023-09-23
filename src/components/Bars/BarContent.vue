@@ -8,8 +8,8 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div>
+  <div class="container relative">
+    <div class="absolute">
       <SideBar />
     </div>
     <MainBar />
@@ -17,10 +17,10 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
+} */
 </style>

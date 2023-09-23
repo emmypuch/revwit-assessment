@@ -208,7 +208,7 @@ export default {
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="/src/assets/images/help.png" alt="" class="w-3 h-3 mr-2" />
+              <img src="/src/assets/images/help.png" alt="" class="w-4 h-4 mr-2" />
               Help and first steps
             </router-link>
           </div>

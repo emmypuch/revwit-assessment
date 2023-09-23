@@ -143,6 +143,8 @@ export default {
         }
       ],
 
+      linkedIn: ['16122', '16122', 'intercom', 'apple', 'attio'],
+
       logoMapping: {
         Sample: '/src/assets/images/attio.png',
         Intercom: '/src/assets/images/intercom.png',
@@ -164,66 +166,90 @@ export default {
 <template>
   <div class="md:ml-[15rem] mt-4">
     <div class="overflow-x-auto overflow-y-auto max-h-[520px]">
-      <div class="flex text-white font-semibold text-sm border-b border-t border-gray-500">
-        <div class="p-[3px] border-r border-gray-500 flex">
-          <div
-            class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
-          ></div>
-          Company
-          <img
-            src="/src/assets/images/plus.png"
-            alt="Category Image"
-            class="w-4 h-4 ml-[4rem] mt-1"
-          />
-        </div>
-        <div class="p-[3px] border-r border-gray-500 flex justify-between">
-          <div class="flex items-center">
-            <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
-            Categories
-          </div>
-          <div class="ml-[5rem]">
-            <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
-          </div>
-        </div>
-        <div class="p-[3px] border-r border-gray-500 flex">
-          LinkedIn
-          <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-        </div>
-        <div class="p-[3px] border-r border-gray-500 flex">
-          Last Interact...
-          <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-          <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
-        </div>
-        <div class="p-[3px] flex">
-          <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-          Connection Strength
-        </div>
-      </div>
-      <div
-        v-for="(item, index) in mockData"
-        :key="index"
-        class="flex text-white text-sm border-t border-b border-gray-500"
-      >
-        <div class="p-[3px] border-r text-sm flex border-gray-500 w-1/5 whitespace-pre-line">
-          <div
-            class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
-          ></div>
-          <div>
-            <img
-              :src="logoMapping[item.name]"
-              alt="Company Logo"
-              class="w-3 h-3 rounded-md mt-[5px] mr-1"
-            />
-          </div>
-          <div class="flex">
-            {{ item.name }}
-          </div>
-        </div>
-        <div class="p-[3px] border-r text-sm border-gray-500 w-3/5 whitespace-pre-line bg-gray-800">
-          <BadgeHolder :mockData="item.badges" />
-        </div>
-        <div class="p-[3px] w-1/5 border-r border-gray-500"></div>
-      </div>
+      <table class="table-auto w-full">
+        <thead>
+          <tr class="text-white font-semibold text-sm border-b border-t border-gray-500">
+            <th class="p-[3px] border-r border-gray-500 flex justify-between">
+              <div class="flex">
+                <div
+                  class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
+                ></div>
+                <div>Company</div>
+              </div>
+              <img
+                src="/src/assets/images/plus.png"
+                alt="Category Image"
+                class="w-4 h-4 ml-[4rem] mt-[1.5px]"
+              />
+            </th>
+            <th class="border-r border-gray-500">
+              <div class="flex justify-between">
+                <div class="flex">
+                  <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
+                  <div>Categories</div>
+                </div>
+                <div class="ml-[5rem]">
+                  <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </th>
+            <th class="p-[3px] border-r border-gray-500 flex justify-between">
+              <div class="flex">
+                <img
+                  src="/src/assets/images/google.png"
+                  alt="Category Image"
+                  class="w-4 h-4 ml-2 mt-[1.9px] mr-1"
+                />
+                <div>LinkedIn</div>
+              </div>
+              <div>
+                <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+              </div>
+            </th>
+            <th class="p-[2px] border-r border-gray-500">
+              <div class="flex">
+                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+                <div>Last Interact...</div>
+                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+                <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+              </div>
+            </th>
+            <th class="p-[3px] flex">
+              <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
+              <div>Connection Strength</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(item, index) in mockData"
+            :key="index"
+            class="text-white text-sm border-t border-b border-gray-500"
+          >
+            <td class="p-[3px] border-r text-sm flex border-gray-500 whitespace-pre-line">
+              <div
+                class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
+              ></div>
+              <div>
+                <img
+                  :src="logoMapping[item.name]"
+                  alt="Company Logo"
+                  class="w-3 h-3 rounded-md mt-[5px] mr-1"
+                />
+              </div>
+              <div class="flex">{{ item.name }}</div>
+            </td>
+            <td
+              class="p-[3px] border-r text-sm border-gray-500 w-2/5 whitespace-pre-line bg-gray-800"
+            >
+              <BadgeHolder :mockData="item.badges" />
+            </td>
+            <td class="p-[3px] w-32 border-r border-gray-500">{{ linkedIn[index] }}</td>
+            <td class="p-[3px] w-44 border-r border-gray-500">No interaction</td>
+            <td class="p-[3px] w-44 border-r border-gray-500">No communication</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>

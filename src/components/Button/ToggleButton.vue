@@ -1,11 +1,9 @@
 <template>
   <div>
     <div
-      class="toggle md:hidden mr-[10px] items-center flex flex-col justify-center absolute left-0 top-[25px] rounded-sm ml-[15px]"
+      class="toggle md:hidden mr-[10px] items-center flex flex-col justify-center absolute left-0 top-[18px] rounded-sm ml-[15px]"
     >
-      <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
-      <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
-      <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
+      <img src="../../assets/images/hamburger.png" class="w-6 h-6" alt="" />
     </div>
   </div>
 </template>

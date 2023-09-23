@@ -13,7 +13,9 @@ export default {
       <div class="company-card_container">
         <div class="card-heading md:ml-[16rem]">
           <div class="flex">
-            <router-link to="#" class="text-base text-white mt-4"> Companies </router-link>
+            <router-link to="#" class="text-base text-white mt-4 ml-16 md:ml-0">
+              Companies
+            </router-link>
             <img src="/src/assets/images/help.png" alt="" class="w-3 h-3 mt-[22px] ml-2" />
           </div>
         </div>
