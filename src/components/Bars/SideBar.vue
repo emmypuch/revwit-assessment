@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div class="">
+  <div class="flex flex-wrap">
     <div
       v-if="!menuIconClicked"
       class="card-container h-screen z-[1] w-full md:w-[220px] min-w-[220px] flex-[160px] top-0 left-0 overflow-x-hidden md:fixed md:rounded-lg md:shadow-sm md:duration-500 md:-translate-x-full md:bg-gray-500"
@@ -55,7 +55,7 @@ export default {
                 <h3 class="text-white text-base ml-2">Acclaim</h3>
               </div>
               <div class="flex justify-center items-center">
-                <h3 class="text-white">W</h3>
+                <img src="/src/assets/images/note.png" alt="" class="w-4 h4" />
               </div>
             </div>
             <div class="border-b border-solid border-gray-500"></div>
@@ -194,21 +194,21 @@ export default {
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="/src/assets/images/upgrade.png" alt="" class="w-4 h-4 mr-2" />
+              <img src="/src/assets/images/upgrade.png" alt="" class="w-3 h-3 mr-2" />
               Upgrade Attio
             </router-link>
             <router-link
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="/src/assets/images/user.png" alt="" class="w-5 h-3 mr-2" />
+              <img src="/src/assets/images/user.png" alt="" class="w-4 h-3 mr-2" />
               Invite teammates
             </router-link>
             <router-link
               to="#"
               class="no-underline flex items-center text-sm leading-[24px] text-white px-3 mt-2"
             >
-              <img src="/src/assets/images/help.png" alt="" class="w-4 h-4 mr-2" />
+              <img src="/src/assets/images/help.png" alt="" class="w-3 h-3 mr-2" />
               Help and first steps
             </router-link>
           </div>

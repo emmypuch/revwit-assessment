@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-for="(badgeHolder, index) in mockData" :key="index" class="badge">
+    <div
+      v-for="(badgeHolder, index) in mockData"
+      :key="index"
+      class="inline-block rounded-[999px] mr-[5px]"
+    >
       <span :style="{ backgroundColor: badgeHolder.backgroundColor, color: badgeHolder.textColor }">
         {{ badgeHolder.text }}
       </span>
@@ -15,14 +19,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.badge {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-right: 5px;
-}
-</style>

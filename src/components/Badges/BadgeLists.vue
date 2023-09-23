@@ -141,7 +141,21 @@ export default {
             { text: 'Technology', backgroundColor: '#254f46', textColor: '#7f9f95' }
           ]
         }
-      ]
+      ],
+
+      logoMapping: {
+        Sample: '/src/assets/images/attio.png',
+        Intercom: '/src/assets/images/intercom.png',
+        Apple: '/src/assets/images/apple.png',
+        Google: '/src/assets/images/google.png',
+        Attio: '/src/assets/images/attio.png',
+        Gotoallcompaniespage: '/src/assets/images/user.png',
+        Airbnb: '/src/assets/images/airbnb.png',
+        PayPal: '/src/assets/images/paypal.png',
+        LVMH: '/src/assets/images/lvmh.png',
+        Disney: '/src/assets/images/disney.png',
+        Microsoft: '/src/assets/images/microsoft.png'
+      }
     }
   }
 }
@@ -151,7 +165,7 @@ export default {
   <div class="md:ml-[15rem] mt-4">
     <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
       <div class="flex text-white font-semibold text-sm border-b border-t border-gray-500">
-        <div class="p-4 border-r border-gray-500 flex">
+        <div class="p-[3px] border-r border-gray-500 flex">
           <div
             class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
           ></div>
@@ -162,7 +176,7 @@ export default {
             class="w-4 h-4 ml-[4rem] mt-1"
           />
         </div>
-        <div class="p-4 border-r border-gray-500 flex justify-between">
+        <div class="p-[3px] border-r border-gray-500 flex justify-between">
           <div class="flex items-center">
             <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
             Categories
@@ -171,31 +185,44 @@ export default {
             <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
           </div>
         </div>
-        <div class="p-4 border-r border-gray-500 flex">
+        <div class="p-[3px] border-r border-gray-500 flex">
           LinkedIn
           <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
         </div>
-        <div class="p-4 border-r border-gray-500 flex">
+        <div class="p-[3px] border-r border-gray-500 flex">
           Last Interact...
           <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
           <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
         </div>
-        <div class="p-4 flex">
+        <div class="p-[3px] flex">
           <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
           Connection Strength
         </div>
       </div>
-
       <div
         v-for="(item, index) in mockData"
         :key="index"
         class="flex text-white text-sm border-t border-b border-gray-500"
       >
-        <div class="p-4 border-r border-gray-500 w-1/5 whitespace-pre-line">{{ item.name }}</div>
-        <div class="p-4 border-r border-gray-500 w-3/5 whitespace-pre-line bg-gray-800">
+        <div class="p-[3px] border-r text-sm flex border-gray-500 w-1/5 whitespace-pre-line">
+          <div
+            class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
+          ></div>
+          <div>
+            <img
+              :src="logoMapping[item.name]"
+              alt="Company Logo"
+              class="w-3 h-3 rounded-md mt-[5px] mr-1"
+            />
+          </div>
+          <div class="flex">
+            {{ item.name }}
+          </div>
+        </div>
+        <div class="p-[3px] border-r text-sm border-gray-500 w-3/5 whitespace-pre-line bg-gray-800">
           <BadgeHolder :mockData="item.badges" />
         </div>
-        <div class="p-4 w-1/5 border-r border-gray-500"></div>
+        <div class="p-[3px] w-1/5 border-r border-gray-500"></div>
       </div>
     </div>
   </div>

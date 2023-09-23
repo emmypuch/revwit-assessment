@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="fixed">
     <div class="main-bar bg-[#1b1d21] h-screen w-screen">
       <div class="company-card_container">
         <div class="card-heading md:ml-[16rem]">
@@ -19,7 +19,6 @@ export default {
         </div>
         <div class="border-b border-solid border-[1px] border-gray-500 mt-3"></div>
 
-        <!-- Company Header Section -->
         <CompanyHeader class="md:ml-[15rem]" />
         <div>
           <BadgeLists />
