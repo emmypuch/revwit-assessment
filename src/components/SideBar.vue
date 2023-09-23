@@ -1,8 +1,9 @@
 <script>
 import ActionList from './ActionList.vue'
+import ToggleButton from './Button/ToggleButton.vue'
 
 export default {
-  components: { ActionList },
+  components: { ActionList, ToggleButton },
   data() {
     return {
       cardContainerStyle: {
@@ -215,15 +216,8 @@ export default {
       </div>
     </div>
     <!-- Toggle Area -->
-    <div
-      v-if="!menuIconClicked"
-      class="toggle md:hidden mr-[10px] items-center flex flex-col justify-center absolute left-0 top-[25px] rounded-sm ml-[15px]"
-      @click="toggleCard"
-      id="navLinks"
-    >
-      <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
-      <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
-      <div class="menu-icon w-[25px] h-[3px] bg-gray-800 m-1"></div>
+    <div v-if="!menuIconClicked" @click="toggleCard" id="navLinks">
+      <ToggleButton />
     </div>
   </div>
 </template>
