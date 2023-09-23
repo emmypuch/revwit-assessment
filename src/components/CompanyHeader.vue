@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col md:flex-row justify-between">
+  <div class="flex flex-col md:flex-row justify-between items-center">
     <div class="flex mt-4">
       <ul class="list-none bg-transparent border-solid border-[1px] border-gray-500 rounded-lg">
         <li>

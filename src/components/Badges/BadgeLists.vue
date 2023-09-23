@@ -21,8 +21,8 @@ export default {
               backgroundColor: '#4a3f15',
               textColor: '#e9e0b9'
             },
-            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#7f9f95' },
-            { text: 'Technology', backgroundColor: '#254f46', textColor: '#7f9f95' }
+            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#cae4d8' },
+            { text: 'Technology', backgroundColor: '#254f46', textColor: '#cae4d8' }
           ]
         },
         {
@@ -41,8 +41,8 @@ export default {
             { text: 'Information Te...', backgroundColor: '#4a3f15', textColor: '#e9e0b9' },
             { text: 'Internet', backgroundColor: '#4a3f15', textColor: '#e9e0b9' },
             { text: 'Mobile', backgroundColor: '#4a3f15', textColor: '#e9e0b9' },
-            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#7f9f95' },
-            { text: 'Technology', backgroundColor: '#254f46', textColor: '#7f9f95' }
+            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#cae4d8' },
+            { text: 'Technology', backgroundColor: '#254f46', textColor: '#cae4d8' }
           ]
         },
         {
@@ -59,8 +59,8 @@ export default {
               backgroundColor: '#4a3f15',
               textColor: '#e9e0b9'
             },
-            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#7f9f95' },
-            { text: 'Technology', backgroundColor: '#254f46', textColor: '#7f9f95' }
+            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#cae4d8' },
+            { text: 'Technology', backgroundColor: '#254f46', textColor: '#cae4d8' }
           ]
         },
         {
@@ -81,9 +81,9 @@ export default {
               textColor: '#e9e0b9'
             },
             { text: 'Internet', backgroundColor: '#4a3f15', textColor: '#e9e0b9' },
-            { text: 'Marketplace', backgroundColor: '#254f46', textColor: '#7f9f95' },
-            { text: 'Technology', backgroundColor: '#254f46', textColor: '#7f9f95' },
-            { text: 'Webservice', backgroundColor: '#1c4b61', textColor: '#97b4c6' }
+            { text: 'Marketplace', backgroundColor: '#254f46', textColor: '#cae4d8' },
+            { text: 'Technology', backgroundColor: '#254f46', textColor: '#cae4d8' },
+            { text: 'Webservice', backgroundColor: '#1c4b61', textColor: '#cfe6f7' }
           ]
         },
         {
@@ -97,7 +97,7 @@ export default {
             },
             { text: 'Information Technolog...', backgroundColor: '#4a3f15', textColor: '#e9e0b9' },
             { text: 'Mobile', backgroundColor: '#4a3f15', textColor: '#e9e0b9' },
-            { text: 'Technoloy', backgroundColor: '#254f46', textColor: '#7f9f95' }
+            { text: 'Technoloy', backgroundColor: '#254f46', textColor: '#cae4d8' }
           ]
         },
         {
@@ -137,8 +137,8 @@ export default {
               backgroundColor: '#4a3f15',
               textColor: '#e9e0b9'
             },
-            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#7f9f95' },
-            { text: 'Technology', backgroundColor: '#254f46', textColor: '#7f9f95' }
+            { text: 'SAAS', backgroundColor: '#254f46', textColor: '#cae4d8' },
+            { text: 'Technology', backgroundColor: '#254f46', textColor: '#cae4d8' }
           ]
         }
       ],
@@ -177,7 +177,7 @@ export default {
 
 <template>
   <div class="md:ml-[15rem] mt-4">
-    <div class="overflow-x-auto overflow-y-auto max-h-[520px]">
+    <div class="overflow-x-auto overflow-y-auto max-h-[540px]">
       <table class="table-auto w-full">
         <thead>
           <tr class="text-white font-semibold text-sm border-b border-t border-gray-500">
@@ -208,7 +208,7 @@ export default {
             <th class="p-[3px] border-r border-gray-500 flex justify-between">
               <div class="flex">
                 <img
-                  src="/src/assets/images/google.png"
+                  src="/src/assets/images/in.png"
                   alt="Category Image"
                   class="w-4 h-4 ml-2 mt-[1.9px] mr-1"
                 />
@@ -252,13 +252,25 @@ export default {
               <div class="flex text-[12px]">{{ item.name }}</div>
             </td>
             <td
-              class="p-[3px] border-r text-[12px] border-gray-500 w-2/5 whitespace-pre-line bg-gray-800"
+              class="p-[3px] border-r text-[12px] border-gray-500 w-2/5 whitespace-pre-line bg-[#21212e]"
             >
               <BadgeHolder :mockData="item.badges" />
             </td>
-            <td class="p-[3px] w-32 border-r border-gray-500 text-[13px]">{{ linkedIn[index] }}</td>
-            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px]">No interaction</td>
-            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px]">No communication</td>
+
+            <td
+              class="p-[3px] w-32 border-r border-gray-500 text-[13px] bg-[#21212e] text-gray-500"
+            >
+              {{ linkedIn[index] }}
+            </td>
+
+            <td
+              class="p-[3px] w-44 border-r border-gray-500 text-[13px] text-gray-500 bg-[#21212e]"
+            >
+              No interaction
+            </td>
+            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px] bg-[#21212e]">
+              No communication
+            </td>
           </tr>
         </tbody>
       </table>
