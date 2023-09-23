@@ -5,7 +5,7 @@
         <li>
           <router-link
             to="#"
-            class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
+            class="no-underline flex items-center text-[11px] leading-[24px] text-white px-3"
           >
             <img src="/src/assets/images/user.png" alt="" class="w-4 h-3 mr-2" />
             All Companies
@@ -20,7 +20,7 @@
         <li>
           <router-link
             to="#"
-            class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
+            class="no-underline flex items-center text-[11px] leading-[24px] text-white px-3"
           >
             <img src="/src/assets/images/filter.png" alt="" class="w-4 h-4 mr-2" />
             Filter
@@ -34,7 +34,7 @@
         <li>
           <router-link
             to="#"
-            class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
+            class="no-underline flex items-center text-[11px] leading-[24px] text-white px-3"
           >
             <img src="/src/assets/images/user.png" alt="" class="w-4 h-3 mr-2" />
             Sort
@@ -48,10 +48,7 @@
         class="list-none bg-transparent border-solid border-[1px] border-gray-500 rounded-lg ml-2"
       >
         <li>
-          <router-link
-            to="#"
-            class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
-          >
+          <router-link to="#" class="no-underline flex items-center px-2">
             <img src="/src/assets/images/chat.png" alt="" class="w-4 h-4 mr-2 mt-1" />
           </router-link>
         </li>
@@ -62,7 +59,7 @@
         <li>
           <router-link
             to="#"
-            class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
+            class="no-underline flex items-center text-[11px] leading-[24px] text-white px-3"
           >
             <img src="/src/assets/images/setting.png" alt="" class="w-4 h-4 mr-2" />
             View Setting
@@ -74,7 +71,7 @@
         <li>
           <router-link
             to="#"
-            class="no-underline flex items-center text-sm leading-[24px] text-white px-3"
+            class="no-underline flex items-center text-[11px] leading-[24px] text-white px-3"
           >
             <img src="/src/assets/images/download.png" alt="" class="w-4 h-4 mr-2" />
             Import / Export

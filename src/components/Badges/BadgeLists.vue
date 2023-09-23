@@ -163,7 +163,7 @@ export default {
 
 <template>
   <div class="md:ml-[15rem] mt-4">
-    <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
+    <div class="overflow-x-auto overflow-y-auto max-h-[520px]">
       <div class="flex text-white font-semibold text-sm border-b border-t border-gray-500">
         <div class="p-[3px] border-r border-gray-500 flex">
           <div
