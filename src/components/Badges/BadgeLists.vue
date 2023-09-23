@@ -143,7 +143,19 @@ export default {
         }
       ],
 
-      linkedIn: ['16122', '16122', 'intercom', 'apple', 'attio'],
+      linkedIn: [
+        '166733',
+        'intercom',
+        'apple',
+        'google',
+        'attio',
+        'united-airlines',
+        'airbnb',
+        'paypal',
+        'lmvh',
+        'the-wait-disney-com...',
+        'microsoft'
+      ],
 
       logoMapping: {
         Sample: '/src/assets/images/attio.png',
@@ -174,7 +186,7 @@ export default {
                 <div
                   class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
                 ></div>
-                <div>Company</div>
+                <div class="text-[12px]">Company</div>
               </div>
               <img
                 src="/src/assets/images/plus.png"
@@ -186,7 +198,7 @@ export default {
               <div class="flex justify-between">
                 <div class="flex">
                   <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
-                  <div>Categories</div>
+                  <div class="text-[12px]">Categories</div>
                 </div>
                 <div class="ml-[5rem]">
                   <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
@@ -200,7 +212,7 @@ export default {
                   alt="Category Image"
                   class="w-4 h-4 ml-2 mt-[1.9px] mr-1"
                 />
-                <div>LinkedIn</div>
+                <div class="text-[12px]">LinkedIn</div>
               </div>
               <div>
                 <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
@@ -209,14 +221,14 @@ export default {
             <th class="p-[2px] border-r border-gray-500">
               <div class="flex">
                 <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-                <div>Last Interact...</div>
+                <div class="text-[12px]">Last Interact...</div>
                 <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
                 <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
               </div>
             </th>
             <th class="p-[3px] flex">
               <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-2" />
-              <div>Connection Strength</div>
+              <div class="text-[12px]">Connection Strength</div>
             </th>
           </tr>
         </thead>
@@ -237,16 +249,16 @@ export default {
                   class="w-3 h-3 rounded-md mt-[5px] mr-1"
                 />
               </div>
-              <div class="flex">{{ item.name }}</div>
+              <div class="flex text-[12px]">{{ item.name }}</div>
             </td>
             <td
-              class="p-[3px] border-r text-sm border-gray-500 w-2/5 whitespace-pre-line bg-gray-800"
+              class="p-[3px] border-r text-[12px] border-gray-500 w-2/5 whitespace-pre-line bg-gray-800"
             >
               <BadgeHolder :mockData="item.badges" />
             </td>
-            <td class="p-[3px] w-32 border-r border-gray-500">{{ linkedIn[index] }}</td>
-            <td class="p-[3px] w-44 border-r border-gray-500">No interaction</td>
-            <td class="p-[3px] w-44 border-r border-gray-500">No communication</td>
+            <td class="p-[3px] w-32 border-r border-gray-500 text-[13px]">{{ linkedIn[index] }}</td>
+            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px]">No interaction</td>
+            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px]">No communication</td>
           </tr>
         </tbody>
       </table>
