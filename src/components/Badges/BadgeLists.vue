@@ -192,18 +192,18 @@ export default {
                 <img
                   src="/src/assets/images/plus.png"
                   alt="Category Image"
-                  class="w-4 h-4 ml-[0rem] mt-[1.5px]"
+                  class="w-3 h-3 ml-[0rem] mt-[1.5px]"
                 />
               </div>
             </th>
             <th class="border-r border-gray-500">
               <div class="flex justify-between mb-[20px]">
                 <div class="flex">
-                  <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
+                  <img src="/src/assets/images/note.png" alt="" class="w-3 h-3 mr-2 mt-[2px]" />
                   <div class="text-[11px]">Categories</div>
                 </div>
-                <div class="ml-[5rem]">
-                  <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+                <div class="ml-[0rem]">
+                  <img src="/src/assets/images/stars.png" alt="Second Image" class="w-3 h-3 mr-2" />
                 </div>
               </div>
             </th>
@@ -214,22 +214,30 @@ export default {
                   alt="Category Image"
                   class="w-4 h-4 mt-[1.9px] mr-1"
                 />
-                <div class="text-[11px] ml-1">LinkedIn</div>
+                <div class="text-[11px]">LinkedIn</div>
               </div>
               <div>
-                <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
+                <img src="/src/assets/images/stars.png" alt="Second Image" class="w-3 h-3 ml-2" />
               </div>
             </th>
-            <th class="p-[2px] border-r border-gray-500">
-              <div class="flex mb-[20px]">
-                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
-                <div class="text-[11px]">Last Interact...</div>
-                <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-3" />
-                <img
-                  src="/src/assets/images/stars.png"
-                  alt="Second Image"
-                  class="w-4 h-4 ml-3 mt-[2px]"
-                />
+            <th class="p-[3px] border-r border-gray-500">
+              <div class="flex justify-between">
+                <div class="flex mb-[20px]">
+                  <img src="/src/assets/images/plus.png" alt="Category Image" class="w-3 h-3" />
+                  <div class="text-[11px]">Last Interact...</div>
+                </div>
+                <div class="flex">
+                  <img
+                    src="/src/assets/images/plus.png"
+                    alt="Category Image"
+                    class="w-3 h-3 ml-3"
+                  />
+                  <img
+                    src="/src/assets/images/stars.png"
+                    alt="Second Image"
+                    class="w-3 h-3 ml-3 mt-[2px]"
+                  />
+                </div>
               </div>
             </th>
             <th class="p-[3px] flex">
@@ -242,9 +250,9 @@ export default {
           <tr
             v-for="(item, index) in mockData"
             :key="index"
-            class="text-white text-sm border-t border-b border-gray-500"
+            class="text-white text-[11px] border-t border-b border-gray-500"
           >
-            <td class="p-[3px] border-r text-sm flex border-gray-500 whitespace-pre-line">
+            <td class="p-[3px] border-r text-[11px] flex border-gray-500 whitespace-pre-line">
               <div
                 class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
               ></div>
@@ -258,13 +266,13 @@ export default {
               <div class="flex text-[12px]">{{ item.name }}</div>
             </td>
             <td
-              class="p-[3px] border-r text-[12px] border-gray-500 w-2/5 whitespace-pre-line bg-[#21212e]"
+              class="p-[3px] border-r text-[11px] border-gray-500 w-2/5 whitespace-pre-line bg-[#21212e]"
             >
               <BadgeHolder :mockData="item.badges" />
             </td>
 
             <td
-              class="p-[3px] w-32 border-r border-gray-500 text-[13px] bg-[#21212e] text-gray-500"
+              class="p-[3px] w-32 border-r border-gray-500 text-[11px] bg-[#21212e] text-gray-500"
             >
               <li class="underline list-none">
                 {{ linkedIn[index] }}
@@ -274,12 +282,12 @@ export default {
             <td
               class="p-[3px] w-44 border-r border-gray-500 text-[13px] text-gray-500 bg-[#21212e]"
             >
-              <li class="list-none">No interaction</li>
+              <li class="list-none text-[11px]">No contact</li>
             </td>
             <td class="p-[3px] w-44 border-r border-gray-500 text-[13px] bg-[#21212e]">
               <div class="flex">
                 <div class="bg-gray-500 p-[5px] h-[1px] w-[2px] mt-[5px] rounded-full"></div>
-                <div class="ml-2">No communication</div>
+                <div class="ml-2 text-[11px]">No communication</div>
               </div>
             </td>
           </tr>
