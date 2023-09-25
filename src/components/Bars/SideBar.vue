@@ -86,7 +86,7 @@ export default {
                       <div
                         class="flex justify-end ml-[120px] text-[#c59502] bg-[#574305] p-[4px] rounded-md h-5 w-4 items-center"
                       >
-                        a
+                        2
                       </div>
                     </div>
                   </router-link>
