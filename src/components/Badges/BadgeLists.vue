@@ -186,7 +186,7 @@ export default {
                 <div
                   class="w-3 h-3 bg-transparent rounded-[3px] p-[4px] border-solid border-[1px] border-[#313337] mr-2"
                 ></div>
-                <div class="text-[11px] mb-[15px]">Company</div>
+                <div class="text-[11px]">Company</div>
               </div>
               <div>
                 <img
