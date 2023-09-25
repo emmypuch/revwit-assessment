@@ -226,7 +226,7 @@ export default {
                 <img
                   src="/src/assets/images/stars.png"
                   alt="Second Image"
-                  class="w-4 h-4 ml-3 mt-[2px]"
+                  class="w-4 h-4 ml-5 mt-[2px]"
                 />
               </div>
             </th>

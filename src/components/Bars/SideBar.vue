@@ -84,7 +84,7 @@ export default {
                     <div class="flex justify-between">
                       <div>Tasks</div>
                       <div
-                        class="flex justify-end ml-[120px] text-[#c59502] bg-[#574305] p-[4px] rounded-md h-5 w-4 items-center"
+                        class="flex justify-end ml-[120px] text-[#c59502] bg-[#574305] p-[5px] text-[10px] rounded-md h-4 w-4 items-center"
                       >
                         2
                       </div>
