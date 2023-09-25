@@ -53,6 +53,7 @@ export default {
               <div class="flex justify-center items-center">
                 <h4 class="bg-blue-500 text-sm rounded-lg p-1 text-center text-white w-8 h-7">A</h4>
                 <h3 class="text-white text-base ml-2">Acclaim</h3>
+                <img src="/src/assets/images/arrow-down.png" alt="" class="w-4 h-4 ml-[2px]" />
               </div>
               <div class="flex justify-center items-center">
                 <img src="/src/assets/images/note.png" alt="" class="w-4 h4" />
