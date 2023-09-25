@@ -29,7 +29,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="border-b border-solid border-[1px] border-gray-500 mt-3"></div>
+        <div class="border-b border-solid border-[1px] border-[#313337] mt-3"></div>
 
         <CompanyHeader class="md:ml-[15rem]" />
         <div>

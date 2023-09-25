@@ -180,13 +180,13 @@ export default {
     <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
       <table class="table-auto w-full">
         <thead>
-          <tr class="text-white text-[11px] border-b border-t border-gray-500">
-            <th class="p-[3px] border-r border-gray-500 flex justify-between">
+          <tr class="text-white text-[11px] border-b border-t border-[#313337]">
+            <th class="p-[3px] border-r border-[#313337] flex justify-between">
               <div class="flex">
                 <div
-                  class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
+                  class="w-3 h-3 bg-transparent rounded-[3px] p-[4px] border-solid border-[1px] border-[#313337] mr-2"
                 ></div>
-                <div class="text-[11px]">Company</div>
+                <div class="text-[11px] mb-[15px]">Company</div>
               </div>
               <div>
                 <img
@@ -196,7 +196,7 @@ export default {
                 />
               </div>
             </th>
-            <th class="border-r border-gray-500">
+            <th class="border-r border-[#313337]">
               <div class="flex justify-between mb-[20px]">
                 <div class="flex">
                   <img src="/src/assets/images/note.png" alt="" class="w-3 h-3 mr-2 mt-[2px]" />
@@ -207,7 +207,7 @@ export default {
                 </div>
               </div>
             </th>
-            <th class="p-[3px] border-r border-gray-500 flex justify-between">
+            <th class="p-[3px] border-r border-[#313337] flex justify-between">
               <div class="flex">
                 <img
                   src="/src/assets/images/in.png"
@@ -220,7 +220,7 @@ export default {
                 <img src="/src/assets/images/stars.png" alt="Second Image" class="w-3 h-3 ml-2" />
               </div>
             </th>
-            <th class="p-[3px] border-r border-gray-500">
+            <th class="p-[3px] border-r border-[#313337]">
               <div class="flex justify-between">
                 <div class="flex mb-[20px]">
                   <img src="/src/assets/images/plus.png" alt="Category Image" class="w-3 h-3" />
@@ -250,11 +250,11 @@ export default {
           <tr
             v-for="(item, index) in mockData"
             :key="index"
-            class="text-white text-[11px] border-t border-b border-gray-500"
+            class="text-white text-[11px] border-t border-b border-[#313337]"
           >
-            <td class="p-[3px] border-r text-[11px] flex border-gray-500 whitespace-pre-line">
+            <td class="p-[3px] border-r text-[11px] flex border-[#313337] whitespace-pre-line">
               <div
-                class="w-4 h-4 bg-transparent mt-1 rounded-md p-[5px] border-solid border-[1px] border-gray-500 mr-2"
+                class="w-3 h-3 bg-transparent mt-1 rounded-[3px] p-[4px] border-solid border-[1px] border-[#313337] mr-2"
               ></div>
               <div>
                 <img
@@ -266,13 +266,13 @@ export default {
               <div class="flex text-[12px]">{{ item.name }}</div>
             </td>
             <td
-              class="p-[3px] border-r text-[11px] border-gray-500 w-2/5 whitespace-pre-line bg-[#21212e]"
+              class="p-[3px] border-r text-[11px] border-[#313337] w-2/5 whitespace-pre-line bg-[#21212e]"
             >
               <BadgeHolder :mockData="item.badges" />
             </td>
 
             <td
-              class="p-[3px] w-32 border-r border-gray-500 text-[11px] bg-[#21212e] text-gray-500"
+              class="p-[3px] w-32 border-r border-[#313337] text-[11px] bg-[#21212e] text-gray-500"
             >
               <li class="underline list-none">
                 {{ linkedIn[index] }}
@@ -280,13 +280,13 @@ export default {
             </td>
 
             <td
-              class="p-[3px] w-44 border-r border-gray-500 text-[13px] text-gray-500 bg-[#21212e]"
+              class="p-[3px] w-44 border-r border-[#313337] text-[13px] text-gray-500 bg-[#21212e]"
             >
               <li class="list-none text-[11px]">No contact</li>
             </td>
-            <td class="p-[3px] w-44 border-r border-gray-500 text-[13px] bg-[#21212e]">
+            <td class="p-[3px] w-44 border-r border-[#313337] text-[13px] bg-[#21212e]">
               <div class="flex">
-                <div class="bg-gray-500 p-[5px] h-[1px] w-[2px] mt-[5px] rounded-full"></div>
+                <div class="bg-[#313337] p-[3px] h-[1px] w-[1px] mt-[5px] rounded-full"></div>
                 <div class="ml-2 text-[11px]">No communication</div>
               </div>
             </td>

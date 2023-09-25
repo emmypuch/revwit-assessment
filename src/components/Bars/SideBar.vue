@@ -45,7 +45,7 @@ export default {
       :style="cardContainerStyle"
     >
       <div
-        class="card-sidebar_link border-r border-solid border-gray-900 bg-gray-900 fixed max-w-[220px] w-full top-0 bottom-0"
+        class="card-sidebar_link border-r border-solid border-gray-900 bg-[#23252a] fixed max-w-[220px] w-full top-0 bottom-0"
       >
         <div class="sidebar-wrapper flex flex-col justify-between w-full h-full">
           <div class="sidebar-contents">
@@ -58,7 +58,7 @@ export default {
                 <img src="/src/assets/images/note.png" alt="" class="w-4 h4" />
               </div>
             </div>
-            <div class="border-b border-solid border-gray-500"></div>
+            <div class="border-b border-solid border-[#313337]"></div>
 
             <!-- Actions Section -->
             <ActionList />
@@ -122,9 +122,9 @@ export default {
             </div>
             <div class="records">
               <img src="" alt="" />
-              <h4 class="text-gray-500 text-[11px] mt-6 ml-3">Records</h4>
+              <h4 class="text-[#6d6f74] text-[11px] mt-6 ml-3">Records</h4>
               <ul class="sidebar-links">
-                <li class="bg-gray-500 rounded-lg w-11/12 ml-2 h-[27px]">
+                <li class="bg-[#313338] rounded-lg w-11/12 ml-2 h-[27px]">
                   <router-link
                     to="#"
                     class="no-underline flex items-center text-[11px] leading-[24px] text-white px-3 mt-2"
@@ -170,7 +170,7 @@ export default {
               <div class="flex justify-between">
                 <div class="flex justify-center items-center">
                   <img src="/src/assets/images/arrow-down.png" alt="" class="w-5 h-5 mt-6 ml-3" />
-                  <div><h4 class="text-gray-500 text-[11px] mt-6 ml-3">Lists</h4></div>
+                  <div><h4 class="text-[#6d6f74] text-[11px] mt-6 ml-3">Lists</h4></div>
                 </div>
                 <div class="text-white mt-6 mr-3 flex justify-center items-center">
                   <img src="/src/assets/images/plus.png" alt="" class="w-4 h-4 mr-2" />
