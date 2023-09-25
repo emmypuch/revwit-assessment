@@ -21,7 +21,7 @@ export default {
             </div>
             <div class="flex mr-4">
               <h4
-                class="bg-[#9162fa] text-[10px] mt-4 rounded-full p-1 mr-1 text-center text-[#f4efff] w-7 h-6"
+                class="bg-[#9162fa] text-[10px] mt-[18px] rounded-full p-[3px] mr-1 text-center text-[#f4efff] w-5 h-5"
               >
                 D
               </h4>

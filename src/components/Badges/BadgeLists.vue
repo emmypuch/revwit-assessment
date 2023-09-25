@@ -180,25 +180,27 @@ export default {
     <div class="overflow-x-auto overflow-y-auto max-h-[500px]">
       <table class="table-auto w-full">
         <thead>
-          <tr class="text-white font-semibold text-sm border-b border-t border-gray-500">
+          <tr class="text-white text-[11px] border-b border-t border-gray-500">
             <th class="p-[3px] border-r border-gray-500 flex justify-between">
               <div class="flex">
                 <div
                   class="w-4 h-4 bg-transparent rounded-md p-2 border-solid border-[1px] border-gray-500 mr-2"
                 ></div>
-                <div class="text-[12px]">Company</div>
+                <div class="text-[11px]">Company</div>
               </div>
-              <img
-                src="/src/assets/images/plus.png"
-                alt="Category Image"
-                class="w-4 h-4 ml-[4rem] mt-[1.5px]"
-              />
+              <div>
+                <img
+                  src="/src/assets/images/plus.png"
+                  alt="Category Image"
+                  class="w-4 h-4 ml-[0rem] mt-[1.5px]"
+                />
+              </div>
             </th>
             <th class="border-r border-gray-500">
               <div class="flex justify-between mb-[20px]">
                 <div class="flex">
                   <img src="/src/assets/images/note.png" alt="" class="w-4 h-4 mr-2" />
-                  <div class="text-[12px]">Categories</div>
+                  <div class="text-[11px]">Categories</div>
                 </div>
                 <div class="ml-[5rem]">
                   <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
@@ -212,7 +214,7 @@ export default {
                   alt="Category Image"
                   class="w-4 h-4 mt-[1.9px] mr-1"
                 />
-                <div class="text-[12px] ml-1">LinkedIn</div>
+                <div class="text-[11px] ml-1">LinkedIn</div>
               </div>
               <div>
                 <img src="/src/assets/images/stars.png" alt="Second Image" class="w-4 h-4 ml-2" />
@@ -221,18 +223,18 @@ export default {
             <th class="p-[2px] border-r border-gray-500">
               <div class="flex mb-[20px]">
                 <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
-                <div class="text-[12px]">Last Interact...</div>
+                <div class="text-[11px]">Last Interact...</div>
                 <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4 ml-3" />
                 <img
                   src="/src/assets/images/stars.png"
                   alt="Second Image"
-                  class="w-4 h-4 ml-5 mt-[2px]"
+                  class="w-4 h-4 ml-3 mt-[2px]"
                 />
               </div>
             </th>
             <th class="p-[3px] flex">
               <img src="/src/assets/images/plus.png" alt="Category Image" class="w-4 h-4" />
-              <div class="text-[12px]">Connection Strength</div>
+              <div class="text-[11px]">Connection Strength</div>
             </th>
           </tr>
         </thead>
